@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Jessica Barnett">
+	<meta name="description" content="This is an activity for students as they are first introduced to the DOM in JavaScript">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="styles.css">
+    <title>AJR</title>
+    <!-- <link src="scripts.js"> -->
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+
+
+
+    <a href="#main" id="skip">Skip to main content</a>
+<header class="parallax">
+		<a href="#main" id="logo"><img id="logo" class="overlay" src="images/ajr_logo.png" alt="white paint strokes representing the AJR logo"></a>
+		<!-- <h1>JS & the DOM 2: Electric Boogaloo</h1> -->
+		<nav>
+				<h2 class="sr-only">Main Navigation</h2>
+				<!-- <ul> -->
+						<a href="#" class="active">Home</a>
+						<a href="#">Songs</a>
+						<a href="#">Contact</a>
+                        <a>Dark Mode/Light Mode</a>
+				<!-- </ul> -->
+		</nav>
+</header>
+<main id="main">
+        <section id="productSelector">
+            <h2>Our Albums</h2>
+            <div id="currentSelecton">
+                <img id="currentAlbumSelectionImage" src="/images/livingRoom.png" alt="Current Album Selection">
+                <h3 id="currentAlbumSelectionName">ALBUM NAME</h3>
+                <p id="currentAlbumSelectionDesc">ALBUM DESCRIPTION</p>
+            </div>
+            <div id="albums">
+                <a id="album1"><img class="albumPicker" src="/images/livingRoom.png" alt="AJR Living Room Album"></a>
+                <a id="album2"><img class="albumPicker" src="/images/theClick.jpg" alt="AJR Living Room Album"></a>
+                <a id="album3"><img class="albumPicker" src="/images/neotheater.jpg" alt="AJR Living Room Album"></a>
+                <a id="album4"><img class="albumPicker" src="/images/oko.jpg" alt="AJR Living Room Album"></a>
+                <a id="album5"><img class="albumPicker" src="/images/maybeMan.jpeg" alt="AJR Maybe Man Album"></a>
+            </div>
+        </section>
+        <section id="guessingGame">
+            <h2>Guessing Game</h2>
+        </section>
+        <section id="contactForm">
+            <h2>Contact Us!</h2>
+            <form id="newAcct" action="https://wp.zybooks.com/form-viewer.php" target="_blank" method="GET">
+                <label for="userName">User Name:<span class="required">*</span><span class="guide">(minimum of one each: A-Z, a-z, 0-9, @.-_!)</span></label>
+                <input type="text" name="userName" id="userName"><p class="hidden">User name must be at least six characters and can include uppercase or lowercase letters, numbers, and @ - \ _ !</p>
+            
+                <label for="email">Email Address:<span class="required">*</span></label>
+                <input type="email" name="email" id="email"><p class="hidden">Please enter a valid email address</p>
+            
+                <label for="zipCode">Zip Code:<span class="required">*</span></label>
+                <input type="text" name="zipCode" id="zipCode"><p class="hidden">Please enter a valid zip code</p>
+            
+                <fieldset>
+                  <legend>Choose your favorite food: <span class="required">*</span></legend>
+                  <label for="pizza" class="radio">
+                    <span class="radio_input">
+                      <input type="radio" name="snack" id="pizza" value="pizza" required checked>
+                      <span class="radio_control"></span>
+                    </span>
+                    <span class="radio_label">Pizza</span>
+                  </label>
+                  <label for="tacos" class="radio">
+                    <span class="radio_input">
+                      <input type="radio" name="snack" id="tacos" value="tacos">
+                      <span class="radio_control"></span>
+                     </span>
+                     <span class="radio_label">Tacos</span>
+                  </label>
+                </fieldset>
+                <p id="food" class="hidden"></p>
+            
+                <label for="agree" id="agreeLabel" class="checkbox">
+                    <span class="checkbox_input">
+                      <input type="checkbox" name="agree" id="agree" value="terms-agree">
+                      <span class="checkbox_control">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          aria-hidden="true"
+                          focusable="false"
+                        >
+                          <path
+                            fill="none"
+                            stroke="#04838A"
+                            stroke-width="3"
+                            d="M1.73 12.91l6.37 6.37L22.79 4.59"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                    <span class="checkbox_label">I agree to the Terms and Conditions<span class="required">*</span></span>
+                  </label>
+                <p id="termsError" class="hidden">You must agree to the terms and conditions before joining</p>
+                <input type="submit" id="mySubmit">
+              </form>
+        </section>
+</main>
+<footer>
+		<p>Copyright &copy;2023 Tyler Garben</p>
+        <p id="quote">"Follow the Click in your ear"</p>
+</footer>
+</body>
+</html>
