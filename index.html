@@ -18,7 +18,7 @@
 
     <a href="#main" id="skip">Skip to main content</a>
 <header class="parallax">
-		<a href="#main" id="logo"><img id="logo" class="overlay" src="images/ajr_logo.png" alt="white paint strokes representing the AJR logo"></a>
+		<a href="#main"><img id="logo" class="overlay" src="images/ajr_logo.png" alt="white paint strokes representing the AJR logo"></a>
 		<!-- <h1>JS & the DOM 2: Electric Boogaloo</h1> -->
 		<nav>
 				<h2 class="sr-only">Main Navigation</h2>
@@ -26,7 +26,7 @@
 						<li><a class="navBtn" href="#">Home</a></li>
 						<li><a class="navBtn" href="#productSelector">Songs</a></li>
             <li><a class="navBtn" href="#guessingGame">Game</a></li>
-						<li><a class="navBtn"href="#contactForm">Contact</a></li>
+						<li><a class="navBtn" href="#contactForm">Contact</a></li>
             <li><a class="navBtn" id="darkLightBtn">Dark Mode/Light Mode</a></li>
         </ol>
 		</nav>
@@ -51,7 +51,7 @@
             <h1>Guessing Game</h1>
             <div id="gameDiv">
               <p id="gameInstruct">Guess the random number and win tickets to our concert!</p>
-              <input id="userInput"></input>
+              <input id="userInput">
               <span id="guessingGameMsg"></span>
               <button id="gamePlay">Guess!</button>
               <p id="results" class="hidden"></p>
@@ -70,15 +70,15 @@
                 <input type="email" name="email" id="email"><p class="hidden">Please enter a valid email address</p>
 
                 <label for="comments">Comments:<span class="required">*</span></label>
-                <textarea type="text" name="comments" id="comments"></textarea><p class="hidden">Please enter comments</p>
+                <textarea name="comments" id="comments"></textarea><p class="hidden">Please enter comments</p>
             
               
 
                 <fieldset>
                   <legend>Choose your contact preference: <span class="required">*</span></legend>
-                  <label for="email" class="radio">
+                  <label for="emailPref" class="radio">
                     <span class="radio_input">
-                      <input type="radio" name="contact" id="email" value="email" required checked>
+                      <input type="radio" name="contact" id="emailPref" value="email" required checked>
                       <span class="radio_control"></span>
                     </span>
                     <span class="radio_label">Email</span>
