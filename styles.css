@@ -50,7 +50,7 @@ table {
 }
 
 /*      CUSTOM STYLES BEGIN     */
-
+/* All Images and Assets Taken From AJR's Current Website*/
 
 @font-face {
 	font-family: ajr_font;
@@ -86,7 +86,7 @@ header{
 	/* background: linear-gradient(to top, var(--ajr_green), transparent),url("images/bg-fixed.jpg"); */
 	display:grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
-	height:350px;
+	height:450px;
 	border-bottom-right-radius: 25px;
 	border-bottom-left-radius: 25px;
 	width:1280px;
@@ -118,18 +118,25 @@ li{
 }
 
 footer{
-	/* background-color: var(--dark-gray); */
-	height: 100px;
-	/* background-image: linear-gradient(var(--ajr_green), var(--dark-gray)); */
+	min-height: 125px;
 	background-color: var(--ajr_green);
 	color:white;
+	text-align: center;
+    margin-top: 2rem;
+	width: 100%;
 }
+
+footer p{
+	font-size: 30px;
+	margin-bottom:10px;
+}
+
 
 .parallax {
 	/* position: relative; */
 	background-image: url("images/bg-fixed.jpg");
 	background-position: bottom;
-	min-height: 50vh;
+	/* min-height: 40vh; */
 	/* Add code here! */
 	/* Ensure good background image formating */
 	/* Begin Parallax effect! */
@@ -151,7 +158,6 @@ footer{
 
 #productSelector{
 	width: 95%;
-	/* height: 500px; */
 	margin-top: -150px;
 	background-color: var(--ajr_tan);
 	box-shadow: inset 0 0 25px #DEB887;
@@ -162,17 +168,14 @@ footer{
 
 #contactForm{
 	width: 95%;
-	/* height: 500px; */
 	background-color: var(--ajr_tan);
 	box-shadow: inset 0 0 25px #DEB887;
 	margin: 0 auto;
 	border-radius: 25px;
-	margin-bottom: 25px;
 }
 
 #guessingGame{
 	width: 95%;
-	height: 500px;
 	background-color: var(--ajr_tan);
 	box-shadow: inset 0 0 25px #DEB887;
 	margin: 0 auto;
@@ -184,7 +187,14 @@ footer{
 	font-style: italic;
 	margin-top:0px;
 	padding:0px;
-	font-size: 16px;
+	font-size: 20px;
+}
+
+#results{
+	font-size: 30px;
+	margin: 18px;
+	padding: 1rem;
+
 }
 p{
     font-family: var(--fonts);
@@ -312,6 +322,43 @@ label{
 	font-size: 1.2rem;
 	box-shadow: var(--box-shadow-lg);
 }
+
+#gameDiv{
+	text-align: center;
+}
+
+#gameInstruct{
+	font-size: 30px;
+}
+
+#userInput{
+	margin-top: 25px;
+	width: 100px;
+	text-align: center;
+	padding: 0.25rem 0.5rem;
+	background-color: white;
+	border: 1px solid lightgray;
+	box-shadow: var(--box-shadow-lg);
+	height: 100px;
+	font-family: ajr_font;
+	font-size: 75px;
+	border-radius: 15px;
+}
+
+#gamePlay{
+	display: block;
+	margin: 0 auto;
+	margin-top: 25px;
+	font-size: 40px;
+	border-radius: 15px;
+	padding: 0.75rem;
+	background-color: var(--ajr_green);
+	outline: none;
+	border: none;
+	color: white;
+	font-weight: bold;
+	box-shadow: var(--box-shadow-lg);
+}
   
 #mySubmit:hover{
 	box-shadow: var(--box-shadow-sm);
@@ -411,19 +458,7 @@ input:focus{
 	max-width: 75ch;
 	margin: 1rem auto;
 	padding: 2rem;
-  }
-  
-  strong{
-	font-weight: bold;
-  }
-
-
-
-
-
-
-
-
+}
 
 #skip{
     position: absolute;
@@ -453,13 +488,6 @@ header, footer{
     padding: 1rem;
 }
 
-footer{
-    text-align: center;
-    /* background-color: var(--dark-gray); */
-    margin-top: 2rem;
-	width: 100%;
-}
-
 h1, h2{
     font-weight: bold;
     text-align: center;
@@ -467,14 +495,18 @@ h1, h2{
 }
 
 h1{
-    font-size: 2.2rem;
+    font-size: 45px;
     margin: 1rem 0;
-    color: var(--pink);
+	padding-top: 25px;
 }
 
-h2{
-    font-size: 1.75rem;
-    margin: 0.75rem;
+ol{
+	width: 1280px;
+	margin-left:-150px;
+}
+
+li{
+	margin: 10px;
 }
 
 nav a{
@@ -489,10 +521,7 @@ nav a{
     margin: 1rem 0;
     box-shadow: var(--spread-shadow);
     font-size: 1.2rem;
-}
-
-header a{
-    background-color: var(--ajr_green);
+	background-color: var(--ajr_green);
 }
 
 section a{
@@ -506,13 +535,4 @@ section a{
     box-shadow: var(--spread-shadow);
     font-size: 1.2rem;
     letter-spacing: 1px;
-}
-
-footer section{
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	gap: 0.5rem;
-	border: none;
-	box-shadow: none;
-	font-size: 3rem;
 }
